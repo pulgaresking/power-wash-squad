@@ -1,0 +1,41 @@
+#reviews {
+  margin: 100px 0px;
+}
+#reviews h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.reviews-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 30px;
+  justify-items: center;
+}
+.review-box {
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #f5f5f5;
+  box-shadow: rgba(0, 0, 0, 0.0980392) 2px 2px 2px 0;
+}
+.review-box p {
+  margin-bottom: 20px;
+}
+.review-box .fa-quote-left {
+  margin-right: 10px;
+  color: grey;
+}
+.review-box .fa-star {
+  color: #fdd314;
+}
+#reviews button {
+  position: absolute;
+  left: 50%;
+  margin-left: -110px;
+}
+
+@media only screen and (max-width: 950px) {
+    .reviews-wrapper {
+        grid-template-columns: auto;
+    }
+}

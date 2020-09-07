@@ -1,0 +1,7 @@
+#intro {
+  background-image: linear-gradient(
+      rgba(86, 109, 143, 0.33),
+      rgba(86, 109, 143, 0.33)
+    ),
+    url("../images/blog1.jpg");
+}

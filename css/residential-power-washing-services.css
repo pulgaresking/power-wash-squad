@@ -1,0 +1,130 @@
+:root {
+  --mainColor: #048bdc;
+  --secondaryColor: #2d2d2d;
+  --mainText: "Open Sans", sans-serif;
+}
+#first {
+  margin: 100px 0px;
+}
+.first-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "first-left first-right";
+  grid-column-gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+.first-left {
+  grid-area: first-left;
+}
+.first-left img {
+  width: 95%;
+}
+.first-right {
+  grid-area: first-right;
+}
+.first-right h3,
+.first-right p {
+  margin-bottom: 10px;
+}
+.first-right a,
+.ad-btn,
+.service-btn,
+.grid-wrapper a,
+.grid-right-wrapper a {
+  border: 2px solid var(--mainColor);
+  padding: 15px;
+  font-weight: 900;
+}
+
+#second {
+  background: #eff4fc;
+  padding: 70px 0px;
+}
+.first-left h3,
+.first-left p {
+  margin-bottom: 10px;
+}
+.service-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -120px;
+}
+
+#grid {
+  margin: 100px 0px;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "grid-left grid-right";
+  grid-column-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.grid-wrapper img {
+  width: 100%;
+}
+.grid-wrapper h3,
+.grid-wrapper p,
+.grid-right-wrapper h3,
+.grid-right-wrapper p {
+  margin-bottom: 30px;
+}
+.grid-left {
+  grid-area: grid-left;
+}
+.grid-right {
+  grid-area: grid-right;
+}
+.right {
+  text-align: right;
+}
+
+.grid-right-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "grid-left-item grid-right-item";
+  grid-column-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.grid-left-item {
+  grid-area: grid-left-item;
+}
+.grid-right-item {
+  grid-area: grid-right-item;
+}
+.grid-right-item img {
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width: 950px) {
+  .first-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "first-left"
+      "first-right";
+    text-align: center;
+  }
+  .grid-right-item img {
+    height: 100%;
+  }
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "grid-left"
+      "grid-right";
+    text-align: center;
+  }
+  .grid-right-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "grid-right-item"
+      "grid-left-item";
+    text-align: center;
+  }
+}

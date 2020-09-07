@@ -1,0 +1,16 @@
+#intro {
+  background-image: linear-gradient(
+      rgba(86, 109, 143, 0.33),
+      rgba(86, 109, 143, 0.33)
+    ),
+    url("../images/blog3.jpg");
+}
+
+.main-content-wrapper img {
+  width: 40%;
+}
+@media only screen and (max-width: 545px) {
+  .main-content-wrapper img {
+    width: 100%;
+  }
+}
