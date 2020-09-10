@@ -1,0 +1,78 @@
+:root {
+  --mainColor: #048bdc;
+  --secondaryColor: #2d2d2d;
+  --mainText: "Open Sans", sans-serif;
+}
+#maps {
+  margin: 100px 0px;
+}
+.maps-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "map-item-left map-item-right";
+  grid-column-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.map-item-left {
+  grid-area: map-item-left;
+}
+.map-item-left iframe,
+.map-item-left-inverted iframe {
+  width: 350px;
+  height: 250px;
+}
+.map-item-right {
+  grid-area: map-item-right;
+  justify-self: start;
+}
+.map-item-right a,
+.map-item-right-inverted a {
+  border: 2px solid var(--mainColor);
+  padding: 10px 13px;
+  font-weight: 900;
+}
+
+.maps-wrapper-inverted {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: "map-item-right-inverted map-item-left-inverted";
+  /* grid-column-gap: 10px; */
+  justify-items: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.map-item-left-inverted {
+  grid-area: map-item-left-inverted;
+}
+
+.map-item-right-inverted {
+  grid-area: map-item-right-inverted;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 950px) {
+  .maps-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "map-item-left"
+      "map-item-right";
+  }
+
+  .maps-wrapper-inverted {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "map-item-left-inverted"
+      "map-item-right-inverted";
+  }
+  .map-item-right-inverted {
+    margin-left: 0px;
+  }
+
+  .map-item-left iframe,
+  .map-item-left-inverted iframe {
+    width: 300px;
+    height: 200px;
+  }
+}

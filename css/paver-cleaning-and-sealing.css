@@ -1,0 +1,9 @@
+.second-wrapper h3,
+.second-wrapper p {
+  margin-bottom: 3px;
+}
+
+.grid-right-wrapper h3,
+.grid-right-wrapper p {
+  margin-bottom: 15px;
+}
